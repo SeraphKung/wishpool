@@ -20,7 +20,7 @@ html{scroll-behavior:smooth}#wish{scroll-margin-top:20px}.wish form{text-align:l
 </form>
 <div id="receiptPanel" hidden><h3>查看送出結果</h3><p>請確認下方 Google 回應顯示「已記錄您的回覆」或同義的成功訊息，才代表表單已接收。若顯示錯誤或仍有欄位，請依提示完成；不要僅因畫面載入就重複送出。</p><iframe name="receipt" id="receipt" title="Google 表單實際收件回應" referrerpolicy="strict-origin-when-cross-origin"></iframe></div>
 <details class="fallback"><summary>送出遇到問題？</summary><p>先保留本頁內容，確認網路後再處理。若下方回應仍無法顯示，可使用<a href="https://forms.gle/Mu1X3d3P5VtNdn8w8" target="_blank" rel="noopener noreferrer">原始表單（另開視窗）</a>，或聯絡 <a href="mailto:knusg12@gmail.com">knusg12@gmail.com</a>。未確認前請勿重複提交。</p><button type="button" class="button" id="editWish">返回檢查填寫內容</button></details>
-<noscript><p>本表單使用標準 HTML 提交。送出後請在下方回應框確認是否成功。</p><iframe name="receipt" title="Google 表單回應（無 JavaScript）"></iframe></noscript>
+<noscript><style>#receiptPanel[hidden]{display:block}</style><p>本表單使用標準 HTML 提交。送出後請在上方回應框確認是否成功。</p></noscript>
 </section></main><footer>產業永續發展特論｜許願池 · 課程教學交流計畫</footer><script>
 'use strict';
 const wishForm=document.getElementById('wishForm'), sendWish=document.getElementById('sendWish'), statusLine=document.getElementById('sendStatus'), panel=document.getElementById('receiptPanel');
